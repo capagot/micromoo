@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS `micromoo_db`;
-CREATE DATABASE `micromoo_db`;
-USE `micromoo_db`;
+-- DROP DATABASE IF EXISTS `micromoo_db`;
+-- CREATE DATABASE `micromoo_db`;
+-- USE `micromoo_db`;
 
 SET NAMES utf8;
 SET character_set_client = utf8mb4;
