@@ -1,0 +1,18 @@
+# Ignore Intelli J files
+stale_outputs_checked
+/.idea
+
+/user_management_service/stale_outputs_checked
+/user_management_service/.idea
+/user_management_service/target
+/user_management_service/*.iml
+
+/database/stale_outputs_checked
+/database/.idea
+/database/target
+/database/*.iml
+
+# Ignore Maven files
+/user_management_service/dependency-reduced-pom.xml
+
+/database/dependency-reduced-pom.xml
