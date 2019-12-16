@@ -1,18 +1,18 @@
 version: '3'
 services:
-  nginx-server:
-    build: nginx_php_service/
+  web-service:
+    build: web_service/
     ports:
       - "9000:80"
     volumes:
-      - ./nginx_php_service/html:/app
-  mysql-server:
+      - ./web_service/html:/app
+  db-service:
     command: --default-authentication-plugin=mysql_native_password
-    build: mysql_service/
+    build: db_service/
     ports:
       - "9001:3306"
-  users-management-service:
-    build: users_management_service
+  users-service:
+    build: java_microservices/users_service
     ports:
       - "9002:4567"
   adminer:

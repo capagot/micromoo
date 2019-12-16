@@ -19,3 +19,4 @@ A microservice-based MOO created for educational purposes.
 
 1. ```docker-compose up -d --build```
 
+https://www.mkyong.com/maven/maven-how-to-create-a-multi-module-project/
