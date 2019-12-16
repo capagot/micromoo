@@ -27,6 +27,16 @@ public final class MySQL {
         }
     }
 
+    public final ResultSet select(final String selectString) {
+        try {
+            return connection.createStatement().executeQuery(selectString);
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+
+        return null;
+    }
+
     public final void close() {
         try {
             connection.close();

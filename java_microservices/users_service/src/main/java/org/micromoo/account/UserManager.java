@@ -2,12 +2,7 @@ package org.micromoo.account;
 
 import static spark.Spark.*;
 import com.google.gson.Gson;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.sql.ResultSet;
-
 import org.micromoo.db.MySQL;
 
 public class UserManager {
@@ -23,7 +18,9 @@ public class UserManager {
             final String insertNewUser = "INSERT INTO users (user_name, user_password, user_type)\r\n" +
                                          "VALUES ('" + user.getName() + "', '" + user.getPassword() + "', '" + user.getType() + "');";
 
-            final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+            //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+            final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
+
             db.insert(insertNewUser);
             db.getConnection().close();
 
@@ -31,24 +28,17 @@ public class UserManager {
         });
 
         get("/hello/:name", (req,res)->{
-            final MySQL db = new MySQL("jdbc:mysql://localhost:3306/sql_store", "root", "root");
+            //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "micromoo_user", "123");
+            final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
 
-            final String selectCustomerData = "SELECT customer_id,\r\n" +
-                                        "       first_name,\r\n" +
-                                        "       last_name,\r\n" +
-                                        "       birth_date,\r\n" +
-                                        "       city,\r\n" +
-                                        "       points\r\n" +
-                                        "FROM customers\r\n" +
-                                        "ORDER BY first_name ASC;";
+            final String selectUserData = "SELECT user_id, user_name, user_password FROM users;";
 
-            final Statement statement = db.getConnection().createStatement();
-            final ResultSet rs = statement.executeQuery(selectCustomerData);
+            final ResultSet rs = db.select(selectUserData);
 
             String s = new String();
 
             while(rs.next()) {
-                s = s + rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3);
+                s = s + rs.getString(1) + " " + rs.getString(2);
             }
 
             db.getConnection().close();
