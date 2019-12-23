@@ -1,6 +1,7 @@
 package org.micromoo.account;
 
 import static spark.Spark.*;
+import spark.Spark;
 import java.util.logging.*;
 
 public class UserRoutes {
@@ -25,5 +26,7 @@ public class UserRoutes {
                                                                       request.queryParams("user_name"),
                                                                       request.queryParams("user_password"),
                                                                       request.queryParams("user_type")), JsonUtil.json());
+
+        Spark.awaitInitialization();
     }
 }
