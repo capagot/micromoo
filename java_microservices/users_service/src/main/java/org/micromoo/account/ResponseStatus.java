@@ -4,7 +4,7 @@ public enum ResponseStatus {
     SUCCESS("Success"),
     ERROR("Error");
 
-    ResponseStatus(String status) {
+    ResponseStatus(final String status) {
         this.status = status;
     }
 

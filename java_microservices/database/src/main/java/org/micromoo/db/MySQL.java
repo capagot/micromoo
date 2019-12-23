@@ -27,6 +27,10 @@ public final class MySQL {
         }
     }
 
+    public final void update(final String updateString) {
+        insert(updateString);
+    }
+
     public final ResultSet select(final String selectString) {
         try {
             return connection.createStatement().executeQuery(selectString);

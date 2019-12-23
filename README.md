@@ -2,21 +2,29 @@
 
 A microservice-based MOO created for educational purposes.
 
-**MySQL Service Setup**
+**Setting Up the Services**
 
-1. Create the Dockerfile
+1. ```$ mvn compile```
+2. ```$ mvn package```
+3. ```$ docker-compose up -d --build```
 
-**Web Service Setup**
+**Shutting Down the Services**
 
-1. Create the Dockerfile
+1. ```$ docker-compose down```
 
-**User Management Service Setup**
+**TODOs**
 
-1. ```mvn compile```
-2. ```mvn package```
+* Web interface.
+* API gateway.
+* Authentication (JWT, OAuth, ...).
+* Data persistence.
+* Database connection strings in a properties file.
 
-**Starting all services system**
+**References**
 
-1. ```docker-compose up -d --build```
+* User service based on:
+    * https://www.mscharhag.com/java/building-rest-api-with-spark
 
-https://www.mkyong.com/maven/maven-how-to-create-a-multi-module-project/
+* Multimodule Maven project based on:
+    * https://books.sonatype.com/mvnex-book/reference/multimodule.html
+
