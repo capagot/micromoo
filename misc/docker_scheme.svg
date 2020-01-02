@@ -17,8 +17,8 @@
    inkscape:version="0.92.3 (unknown)"
    sodipodi:docname="docker_scheme.svg"
    inkscape:export-filename="/home/christian/Dropbox/work/github_workspace/micromoo/misc/docker_scheme.png"
-   inkscape:export-xdpi="99.987305"
-   inkscape:export-ydpi="99.987305">
+   inkscape:export-xdpi="100.03259"
+   inkscape:export-ydpi="100.03259">
   <defs
      id="defs2">
     <marker
@@ -149,9 +149,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="591.96207"
-     inkscape:cy="321.10374"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="665.7156"
+     inkscape:cy="301.34246"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -182,7 +182,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -265,12 +265,12 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
        x="23.812492"
-       y="101.5863"
+       y="98.411301"
        id="text1119"><tspan
          sodipodi:role="line"
          id="tspan1117"
          x="23.812492"
-         y="101.5863"
+         y="98.411301"
          style="font-weight:bold;stroke-width:0.26458335">Docker Network</tspan></text>
     <g
        id="g1157"
@@ -688,5 +688,16 @@
          d="M 53.277412,155.71253 H 42.694078"
          style="fill:none;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL-8-7)" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:13.58194447px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335"
+       x="32.328281"
+       y="169.28642"
+       id="text4673"><tspan
+         sodipodi:role="line"
+         id="tspan4671"
+         x="32.328281"
+         y="169.28642"
+         style="line-height:8.46666718px;stroke-width:0.26458335">REST</tspan></text>
   </g>
 </svg>
