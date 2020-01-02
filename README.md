@@ -2,7 +2,7 @@
 
 A microservice-based MOO in its very early stages of development. The project was created for educational purposes.
 
-**MicroMOO Current Structure**
+## MicroMOO Current Structure
 
 Currently the system is composed by the following microservices:
 
@@ -22,7 +22,7 @@ The following image illustrates how the containers are organized inside the Dock
 
 ![Docker Network](https://github.com/capagot/micromoo/blob/junit_users_service/misc/docker_scheme.png)
 
-**Compiling and setting up Micromoo**
+## Compiling and setting up Micromoo
 
 Before compiling and installing Micromoo, you must have docker and Java installed. Once you have everything properly installed, at the root of the project directory tree issue the following commands:
 
@@ -30,17 +30,17 @@ Before compiling and installing Micromoo, you must have docker and Java installe
 2. ```$ mvn package -Dmaven.test.skip=true``` (to skip the JUnit tests)
 3. ```$ docker-compose up -d --build```
 
-**Accessing Micromoo**
+## Accessing Micromoo
 
 To access the Micromoo user management module, just open the following URL on a web browser:
 
 ```http://localhost:9000/users_admin.html```
 
-**Shutting Down Micromoo**
+## Shutting Down
 
 1. ```$ docker-compose down```
 
-**TODOs**
+## TODOs
 
 * Improve the web interface.
 * Implement an API gateway.
@@ -48,7 +48,7 @@ To access the Micromoo user management module, just open the following URL on a 
 * Include data persistence.
 * And lots and lots of other things...
 
-**References**
+## References
 
 * User management service and tests based on:
     * https://www.mscharhag.com/java/building-rest-api-with-spark
