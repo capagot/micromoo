@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MicroMOO - The microservice-based test MOO</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body><pre><output>
+                                    USERS
+
+Search
+------------------------------------------------------------------------------
+<form action="user_info.php" method="GET">
+  User ID ............: <input type="text" name="user_id" placeholder="Enter user ID"/>
+  <button type="submit" name="submit">Search</button>
+</form>
+
+Create
+------------------------------------------------------------------------------
+<form action="user_create.php" method="GET">
+  User name ..........: <input type="text" name="user_name" placeholder="Enter user name"/>
+  User password ......: <input type="text" name="user_password" placeholder="Enter user password"/>
+  User type ..........: <input type="text" name="user_type" placeholder="Enter user type"/>
+  <button type="submit" name="submit">Create</button>
+</form>
+
+Update
+------------------------------------------------------------------------------
+<form action="user_update.php" method="GET">
+  User ID ............: <input type="text" name="user_id" placeholder="Enter user ID"/>
+  User name ..........: <input type="text" name="user_name" placeholder="Enter user name"/>
+  User password ......: <input type="text" name="user_password" placeholder="Enter user password"/>
+  User type ..........: <input type="text" name="user_type" placeholder="Enter user type"/>
+  <button type="submit" name="submit">Update</button>
+</form>
+
+<a href="index.php"><< Back...</a>
+</output></pre>
+</body>
+</html>

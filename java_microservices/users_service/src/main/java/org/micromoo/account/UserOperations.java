@@ -21,8 +21,8 @@ public final class UserOperations {
                                       "  user_type\r\n" +
                                       "FROM users;";
 
-        final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
-        //final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
+        //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+        final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
         final ResultSet rs = db.select(selectUserData);
 
         ArrayList<User> user_list = new ArrayList<User>();
@@ -48,8 +48,8 @@ public final class UserOperations {
                                       "FROM users\r\n" +
                                       "WHERE user_id = " + user_id + ";";
 
-        final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
-        //final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
+        //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+        final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
         final ResultSet rs = db.select(selectUserData);
 
         if (rs.next()) {
@@ -78,8 +78,8 @@ public final class UserOperations {
 
         LOGGER.info("INSERTION statatemen: " + insertUserData);
 
-        final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
-        //final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
+        //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+        final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
         db.insert(insertUserData);
 
         final String selectUserData = "SELECT user_id,\r\n" +
@@ -115,8 +115,8 @@ public final class UserOperations {
 
         LOGGER.info("UPDATE statatemen: " + updateUserData);
 
-        final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
-        //final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
+        //final MySQL db = new MySQL("jdbc:mysql://localhost:3306/micromoo_db", "root", "root");
+        final MySQL db = new MySQL("jdbc:mysql://db-service:3306/micromoo_db", "micromoo_user", "123");
         db.update(updateUserData);
 
         final String selectUserData = "SELECT user_id,\r\n" +

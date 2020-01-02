@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2019 by Chris Coyier  (https://codepen.io/chriscoyier/pen/GBbOJd)
  *
- * Permission is hereby granted, free of charge, to any person obtaining a 
+ * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
  * to deal in the Software without restriction, including without limitation
  * the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -22,7 +22,7 @@
 
 body {
   background-color: black;
-  background-image: radial-gradient(rgba(0, 100, 0, 0.75), black 120%);
+  background-image: radial-gradient(rgba(0, 40, 0, 0.75), black 120%);
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -38,10 +38,10 @@ body::after {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: repeating-linear-gradient(0deg, 
-    rgba(0, 0, 0, 0.15), 
-    rgba(0, 0, 0, 0.15) 1px, 
-    transparent 1px, 
+  background: repeating-linear-gradient(0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
     transparent 2px);
   pointer-events: none;
 }
@@ -55,23 +55,27 @@ pre {
   margin: 0;
 }
 
-input[type='text'] { 
+input[type='text'] {
 	color: white;
     text-shadow: 0 0 5px #C8C8C8;
 	border: none;
     background-color: rgba(0, 100, 0, 0.25);
-    font-size: 1.1rem; 
-    font: Incosolate; 
-    font-family: monospace; 
+    font-size: 1.1rem;
+    font: Incosolate;
+    font-family: monospace;
 }
 
-input[type='button'] { 
+input[type='button'] {
 	color: white;
     text-shadow: 0 0 5px #C8C8C8;
 	border: none;
     background-color: rgba(0, 100, 0, 0.25);
-    font-size: 1.1rem; 
-    font: Incosolate; 
-    font-family: monospace; 
+    font-size: 1.1rem;
+    font: Incosolate;
+    font-family: monospace;
 }
 
+a {
+  color: Yellow;
+  text-decoration: none;
+}
