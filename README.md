@@ -1,23 +1,26 @@
-# micromoo
+# MicroMOO
 
-A microservice-based MOO in early stages of development.
+A microservice-based MOO in its very early stages of development. The project was created for educational purposes.
 
-**Current structure**
+**MicroMOO Current Structure**
 
 Currently the system is composed by the following microservices:
 
-* A database service;
-* A web service;
-* and a User Management service.
+* Database service;
+* Web service;
+* User Management service.
 
-The database service is composed by a container containing a MySQL database running on Alpine Linux.
+The Database service is implemented by a container containing a [MySQL](https://www.mysql.com) database running on Alpine Linux.
+
 The Web service is composed by a Nginx webserver running on Alpine Linux. The service currently hosts a couple of PHP webpages that implement the temporary interface with the User Management service.
-The User Management service is composed by a Java application running on top of Alpine Linux. The communication with the service is made through a RESTful interface implemented with Spark.
-Each service is hosted in a separate Docker container. There is actually a fourth container in charge of the Adminer, a database web interface system, but it is not part of Micromoo itself and serves only as a debugging tool.
 
-The following image illustrates how the containers are organized inside the Docker Network and how the containers' ports map to the host machine ports:
+The User Management service is composed by a Java application running on top of [Alpine](https://alpinelinux.org) Linux. The communication with the service is made through a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) interface implemented with [Spark](http://sparkjava.com).
 
-****** ADD IMAGE HERE ******
+Each service is hosted in a separate [Docker](https://www.docker.com) container. There is actually a fourth container in charge of the [Adminer](https://www.adminer.org), a database web interface system, but it is not part of Micromoo itself and serves only as a debugging tool.
+
+The following image illustrates how the containers are organized inside the Docker Network and how the containers' ports map to the host machine (localhost) ports:
+
+![Docker Network](https://github.com/capagot/micromoo/blob/junit_users_service/misc/docker_scheme.png)
 
 **Compiling and setting up Micromoo**
 
@@ -29,7 +32,7 @@ Before compiling and installing Micromoo, you must have docker and Java installe
 
 **Accessing Micromoo**
 
-To access Micromoo, just open the following URL on a web browser:
+To access the Micromoo user management module, just open the following URL on a web browser:
 
 ```http://localhost:9000/users_admin.html```
 
